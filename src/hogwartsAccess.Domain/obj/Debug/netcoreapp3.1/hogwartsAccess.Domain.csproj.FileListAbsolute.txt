@@ -1,0 +1,10 @@
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\bin\Debug\netcoreapp3.1\Ifx.Services.hogwartsAccess.Domain.deps.json
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\bin\Debug\netcoreapp3.1\Ifx.Services.hogwartsAccess.Domain.dll
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\bin\Debug\netcoreapp3.1\Ifx.Services.hogwartsAccess.Domain.pdb
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\hogwartsAccess.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\hogwartsAccess.Domain.AssemblyInfoInputs.cache
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\hogwartsAccess.Domain.AssemblyInfo.cs
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\hogwartsAccess.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\Ifx.Services.hogwartsAccess.Domain.dll
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\Ifx.Services.hogwartsAccess.Domain.pdb
+C:\Users\HOUSEVOLUTION\Developer\BackEnd\ifx-hogwarts-access-mngr\src\hogwartsAccess.Domain\obj\Debug\netcoreapp3.1\hogwartsAccess.Domain.csproj.AssemblyReference.cache

@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Ifx.Services.hogwartsAccess.Domain</AssemblyName>
+    <RootNamespace>Ifx.Services.hogwartsAccess.Domain</RootNamespace>
+    <Authors>AndresCano</Authors>
+  </PropertyGroup>
+
+</Project>

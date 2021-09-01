@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62CFA694-270D-462C-BA56-60B9D2EBE034}"
+	ProjectSection(SolutionItems) = preProject
+		.targets = .targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.API", "src\hogwartsAccess.API\hogwartsAccess.API.csproj", "{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.Domain", "src\hogwartsAccess.Domain\hogwartsAccess.Domain.csproj", "{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6B012781-2C48-403E-A2DE-E4277A61C525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9515D94A-DB34-42AF-BB0A-25C1399456B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{6F383EB7-B6A0-443C-B76F-206F2F5FFFB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.Persistence", "src\hogwartsAccess.Persistence\hogwartsAccess.Persistence.csproj", "{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.Application", "src\hogwartsAccess.Application\hogwartsAccess.Application.csproj", "{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D77B8FC3-42E6-4982-8D27-33EE6E2C4BDF} = {6F383EB7-B6A0-443C-B76F-206F2F5FFFB5}
+		{4DBAD4EA-EA6E-4A9C-98BA-7476F661EB7D} = {6B012781-2C48-403E-A2DE-E4277A61C525}
+		{6B012781-2C48-403E-A2DE-E4277A61C525} = {62CFA694-270D-462C-BA56-60B9D2EBE034}
+		{9515D94A-DB34-42AF-BB0A-25C1399456B6} = {62CFA694-270D-462C-BA56-60B9D2EBE034}
+		{6F383EB7-B6A0-443C-B76F-206F2F5FFFB5} = {62CFA694-270D-462C-BA56-60B9D2EBE034}
+		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8} = {9515D94A-DB34-42AF-BB0A-25C1399456B6}
+		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98} = {6B012781-2C48-403E-A2DE-E4277A61C525}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B5B4ACA-4696-4B43-B242-85642A769B41}
+	EndGlobalSection
+EndGlobal
