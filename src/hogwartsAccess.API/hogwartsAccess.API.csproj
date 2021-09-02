@@ -5,6 +5,8 @@
     <AssemblyName>Ifx.Services.hogwartsAccess.API</AssemblyName>
     <RootNamespace>Ifx.Services.hogwartsAccess.API</RootNamespace>
     <Authors>AndresCano</Authors>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <Import Project="..\..\.targets" />
@@ -22,6 +24,7 @@
       <PrivateAssets></PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
   </ItemGroup>
 
