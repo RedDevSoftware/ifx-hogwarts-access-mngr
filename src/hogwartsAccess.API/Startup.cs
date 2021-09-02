@@ -1,5 +1,6 @@
 namespace Ifx.Services.hogwartsAccess.API
 {
+    using System;
     using FluentValidation.AspNetCore;
     using Ifx.Services.hogwartsAccess.Application.Admissions.Commands.Create;
     using Microsoft.AspNetCore.Builder;
@@ -11,6 +12,7 @@ namespace Ifx.Services.hogwartsAccess.API
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
     using Swashbuckle.AspNetCore.SwaggerGen;
 
     public class Startup
@@ -25,19 +27,18 @@ namespace Ifx.Services.hogwartsAccess.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateAdmissionValidator>());
-
             services.AddRouting(options => options.LowercaseUrls = true);
+
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Latest)
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateAdmissionValidator>());
 
             services.AddApiVersioning();
 
             services.AddVersionedApiExplorer(options => options.GroupNameFormat = "'v'VVV");
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
-            services.AddSwaggerGen();
 
-            //services.AddControllers();
+            services.AddSwaggerGen();
 
             services.AddAdmissionApplication();
         }
@@ -57,7 +58,17 @@ namespace Ifx.Services.hogwartsAccess.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseAuthentication();
+            app.ConfigureExceptionHandler(loggerFactory);
+
+            app.UseHttpsRedirection();
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
 
             app.UseSwagger().UseSwaggerUI(
                 options =>

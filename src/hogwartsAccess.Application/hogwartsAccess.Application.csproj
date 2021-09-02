@@ -7,6 +7,8 @@
     <Authors>AndresCano</Authors>
   </PropertyGroup>
 
+  <Import Project="..\..\.targets" />
+
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="FluentValidation" Version="10.3.3" />

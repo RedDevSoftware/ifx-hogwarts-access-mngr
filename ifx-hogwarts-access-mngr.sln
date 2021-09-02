@@ -22,6 +22,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.Persistence"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hogwartsAccess.Application", "src\hogwartsAccess.Application\hogwartsAccess.Application.csproj", "{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B2D2F4E-869A-45FE-B436-2C94B6DC6A60}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{504361EE-C8E8-4016-ABEE-3A28E49352FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C496FD5C-2B3D-4E4E-A610-BD007B1FDB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hogwartsAccess.Application.Tests", "test\hogwartsAccess.Application.Tests\hogwartsAccess.Application.Tests.csproj", "{4300292E-57A1-4EDA-A259-FD263C9332C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +56,10 @@ Global
 		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4300292E-57A1-4EDA-A259-FD263C9332C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4300292E-57A1-4EDA-A259-FD263C9332C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4300292E-57A1-4EDA-A259-FD263C9332C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4300292E-57A1-4EDA-A259-FD263C9332C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +72,8 @@ Global
 		{6F383EB7-B6A0-443C-B76F-206F2F5FFFB5} = {62CFA694-270D-462C-BA56-60B9D2EBE034}
 		{DE7A3D09-F74A-4B73-8385-AD8322DBA4A8} = {9515D94A-DB34-42AF-BB0A-25C1399456B6}
 		{F8622E21-FD3D-42E4-91A9-D96E5E36BE98} = {6B012781-2C48-403E-A2DE-E4277A61C525}
+		{C496FD5C-2B3D-4E4E-A610-BD007B1FDB82} = {504361EE-C8E8-4016-ABEE-3A28E49352FE}
+		{4300292E-57A1-4EDA-A259-FD263C9332C8} = {C496FD5C-2B3D-4E4E-A610-BD007B1FDB82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B5B4ACA-4696-4B43-B242-85642A769B41}

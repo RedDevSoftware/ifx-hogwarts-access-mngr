@@ -10,11 +10,12 @@
         public AdmissionProfile()
         {
             CreateMap<Admission, Admissions.Queries.AdmissionModel>()
-                .ForMember(dest => dest.Status, source => source.MapFrom(source => Enum.GetName(typeof(StatusAdmission), source.Status)))
-                .ForMember(dest => dest.HouseRequest, source => source.MapFrom(source => Enum.GetName(typeof(HogwartsHouses), source.HouseRequest)));
+                .ForMember(dest => dest.Name, source => source.MapFrom(source => source.Students.Name))
+                .ForMember(dest => dest.LastName, source => source.MapFrom(source => source.Students.LastName));
 
             CreateMap<Admissions.Commands.AdmissionModel, Admission>()
-                .ForMember(dest => dest.Status, source => source.MapFrom(source => StatusAdmission.PENDING));
+                .ForMember(dest => dest.Status, source => source.MapFrom(source => StatusAdmission.PENDING))
+                .ForMember(dest => dest.Id, source => source.MapFrom(source => new Guid()));
         }
     }
 }

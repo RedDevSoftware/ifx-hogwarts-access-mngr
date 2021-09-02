@@ -17,16 +17,16 @@ namespace Ifx.Services.hogwartsAccess.Persistence.Configuration
             builder.HasKey(e => e.Identification);
 
             builder.Property(e => e.Identification)
-                .HasColumnName("id").HasColumnType("varchar")
+                .HasColumnName("id")
                 .HasMaxLength(13)
                 .IsRequired();
 
             builder.Property(e => e.Name)
-                .HasColumnName("name").HasColumnType("varchar")
+                .HasColumnName("name")
                 .IsRequired();
 
             builder.Property(e => e.LastName)
-                .HasColumnName("lastName").HasColumnType("varchar")
+                .HasColumnName("lastName")
                 .IsRequired();
 
             builder.HasData(new[] {

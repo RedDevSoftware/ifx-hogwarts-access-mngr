@@ -13,7 +13,7 @@
             builder.HasKey(e => e.Id);
 
             builder.Property(e => e.Id)
-                .HasColumnName("id").HasColumnType("varchar")
+                .HasColumnName("id")
                 .IsRequired();
 
             builder.HasOne(d => d.Students)
@@ -22,22 +22,22 @@
                 .HasConstraintName("FK_STUDENT_ADMISSION");
 
             builder.Property(e => e.Identification)
-                .HasColumnName("identification").HasColumnType("varchar")
+                .HasColumnName("identification")
                 .HasMaxLength(13)
                 .IsRequired();
 
             builder.Property(e => e.Age)
-                .HasColumnName("age").HasColumnType("varchar")
+                .HasColumnName("age")
                 .HasMaxLength(3)
                 .IsRequired();
 
             builder.Property(e => e.HouseRequest)
-                .HasColumnName("houseRequest").HasColumnType("varchar")
+                .HasColumnName("houseRequest")
                 .HasMaxLength(50)
                 .IsRequired();
 
             builder.Property(e => e.Status)
-                .HasColumnName("status").HasColumnType("varchar")
+                .HasColumnName("status")
                 .HasMaxLength(50)
                 .IsRequired();
 

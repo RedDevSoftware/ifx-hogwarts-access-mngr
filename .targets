@@ -8,6 +8,6 @@
 
     <Company>Andres L Cano A</Company>
     <Copyright>Copyright 2019 (c) $(Company). All rights reserved.</Copyright>
-    <Product>Services.Params</Product>
+    <Product>Services.DataIfx</Product>
   </PropertyGroup>
 </Project>

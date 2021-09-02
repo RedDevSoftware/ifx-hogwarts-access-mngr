@@ -1,5 +1,6 @@
 ﻿namespace Ifx.Services.hogwartsAccess.Application.Admissions.Queries
 {
+using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading;
@@ -27,7 +28,6 @@
             {
                 return await context.Admissions
                     .ProjectTo<AdmissionModel>(mapper.ConfigurationProvider)
-                    .OrderBy(dt => dt.Status)
                     .AsNoTracking()
                     .ToListAsync(cancellationToken);
             }
