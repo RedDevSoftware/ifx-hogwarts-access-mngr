@@ -3,7 +3,7 @@ Technical test to company DataIfx with technology .Net Core 3.0 +
 
 ### Install dataBase docker.
 ##### Download image docker sqlServer
-* Execute command next
+* Execute next command
 	```sh
 	- sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
 	```
@@ -11,7 +11,7 @@ Technical test to company DataIfx with technology .Net Core 3.0 +
 	```sh
 	- docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=sqlServer123" -p 1433:1433 --name (name) -h (name) -d mcr.microsoft.com/mssql/server:2019-latest
 	```
-* Crea dataBase
+* Create dataBase
     ```sh
     - sudo docker exec -it sql1 "bash"
     - /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "<YourNewStrong@Passw0rd>"
@@ -21,7 +21,7 @@ Technical test to company DataIfx with technology .Net Core 3.0 +
     ```
 
 ##### Download image docker mysqlServer
-* Execute command next
+* Execute next command 
 	```sh
 	- docker pull mysql/mysql-server:version
 	```
@@ -37,11 +37,11 @@ Technical test to company DataIfx with technology .Net Core 3.0 +
 		```sh
 		docker exec -it (name) mysql -uroot -p
 		```
-	* Crea dataBase
+	* Create dataBase
 	    ```sql
 	    CREATE DATABASE dbformatqa;
 	    ```
-	* Changue password
+	* Change password
 		```sh
 		- ALTER USER 'root'@'localhost' IDENTIFIED BY 'server123*';
 		- CREATE USER 'root'@'%' IDENTIFIED BY 'dbformatqa%';
